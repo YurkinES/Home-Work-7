@@ -23,5 +23,15 @@ public class Main {
             n--;
         }
         System.out.println();
+        //Task #3
+        int population = 12000000;
+        int birthRate = population / 1000 * 17;
+        int deathRate = population / 1000 * 8;
+        int numberOfYears = 0;
+        while (numberOfYears < 10) {
+            numberOfYears++;
+            population = population + birthRate - deathRate;
+            System.out.println("Год " + numberOfYears + " численность населения состовляет " + population);
+        }
     }
 }
