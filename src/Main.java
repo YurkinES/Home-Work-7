@@ -33,5 +33,14 @@ public class Main {
             population = population + birthRate - deathRate;
             System.out.println("Год " + numberOfYears + " численность населения состовляет " + population);
         }
+        //Task #4
+        int totalMoney4 = 15000;
+        int numberOfMonth4 = 0;
+        while (totalMoney4 < 12000000) {
+            totalMoney4 = totalMoney4 + totalMoney4 / 100 * 7;
+            numberOfMonth4++;
+            System.out.println("Месяц " + numberOfMonth4 + " сумма накоплений " + totalMoney4 + " рублей");
+        }
+        System.out.println("Итого месяцев для накопления необходимой суммы " + numberOfMonth4);
     }
 }
