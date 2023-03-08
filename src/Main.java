@@ -52,5 +52,15 @@ public class Main {
                 System.out.println("Месяц " + numberOfMonth5 + " сумма накоплений " + totalMoney5 + " рублей");}
         }
         System.out.println("Итого месяцев для накопления необходимой суммы " + numberOfMonth5);
+        //Task #6
+        int totalMoney6 = 15000;
+        int numberOfMonth6 = 0;
+        int accumulationTime = 9 * 12;
+        while (numberOfMonth6 <= accumulationTime) {
+            totalMoney6 = totalMoney6 + totalMoney6 / 100 * 7;
+            numberOfMonth6++;
+            if (numberOfMonth6 % 6 == 0){
+                System.out.println("Месяц " + numberOfMonth6 + " сумма накоплений " + totalMoney6 + " рублей");}
+        }
     }
 }
