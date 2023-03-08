@@ -69,5 +69,14 @@ public class Main {
             System.out.println("Сегодня пятница, " + friday + "-е число. Необходимо подготовить отчет");
             friday = friday +7;
         }
+        //Task #8
+        int yearCountdown = 1823;
+        int lastYearCountdown = 2123;
+        while (yearCountdown <= lastYearCountdown) {
+            yearCountdown++;
+            if (yearCountdown % 79 == 0){
+                System.out.println( yearCountdown );
+            }
+        }
     }
 }
