@@ -62,5 +62,12 @@ public class Main {
             if (numberOfMonth6 % 6 == 0){
                 System.out.println("Месяц " + numberOfMonth6 + " сумма накоплений " + totalMoney6 + " рублей");}
         }
+        //Task #7
+        int friday = 1;
+        int numbersOfDays = 31;
+        while (friday <= numbersOfDays) {
+            System.out.println("Сегодня пятница, " + friday + "-е число. Необходимо подготовить отчет");
+            friday = friday +7;
+        }
     }
 }
